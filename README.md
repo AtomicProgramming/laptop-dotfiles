@@ -1,2 +1,2 @@
-# My dotfiles:
-These are my personal dotfiles used on my pc, currently I have not unified the dotfiles from my laptop and my pc, however due to the changes within i3 config files, I will most likely make a second repo for my laptop dotfiles, or add it to this repo on a different branch
+#My laptop dotfiles:
+This repo is indenpendant of my pc dotfiles repo, as they will both be branching, as my laptop needs more features such as wireless network and battery option for i3status which I would probably never need for my pc, there is no point having it redundant
