@@ -1,0 +1,37 @@
+general {
+	output_format = "i3bar"
+	markup = "pango"
+        colors = false
+        interval = 5
+	color_good = "#62f707"
+		color_degraded = "#e88a0c"
+		color_bad = "#ff3a00"
+}
+
+order += "cpu_usage"
+order += "ethernet enp5s0"
+order += "disk /"
+order += "memory"
+order += "tztime London"
+
+cpu_usage {
+	format = "<span background='#0f9eeb'> CPU use: %usage </span>"
+}
+
+ethernet enp5s0 {
+        format_up = "<span background='#eb0fca'> %ip @ %speed </span>"
+        format_down = "E: down"
+}
+
+disk "/" {
+        format = "<span background='#ebb60f'> %used/%total </span>"
+}
+
+memory {
+        format = "<span background='#09e5ec'> %used/%total </span>"
+}
+
+tztime London {
+	format = "<span background='#91eb0f'> %time </span>"
+	format_time = "%H:%M:%S | %d/%m/%Y"
+}
